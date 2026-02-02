@@ -63,15 +63,16 @@ A criação do dashboard será orientada por perguntas de negócio previamente d
 Conexão com o banco de dados
 1.1 Nesta etapa, é realizada a conexão com o banco de dados DB_ERP_COMERCIAL, hospedado em um servidor local SQL Server, com o objetivo de acessar as tabelas e informações necessárias para a construção do dashboard.
 
-./resources/img1.png
+![KPIs](resources/img1.png)
+
 
 1.2 Nesta etapa, serão selecionadas todas as tabelas do banco de dados, mesmo que apenas algumas sejam utilizadas inicialmente. Essa decisão visa facilitar futuras expansões do dashboard, garantindo que os dados já estejam disponíveis caso sejam necessários posteriormente.
 
-Press enter or click to view image in full size
+![img2](resources/img2.png)
 
 Após a conexão com o banco de dados, serão definidos o tamanho do dashboard e o tema visual, de forma a proporcionar uma melhor organização das informações e uma experiência visual mais clara e objetiva.
 
-Press enter or click to view image in full size
+![img3](resources/img3.png)
 
 Indicadores de Performance (KPI Cards)
 
@@ -81,7 +82,7 @@ Cards de indicadores financeiros
 
 Foram criados cards de indicadores-chave com o objetivo de fornecer uma visão imediata do desempenho financeiro. Esses cartões concentram informações estratégicas ao apresentar, de forma integrada, o Total de Vendas, o Faturamento Líquido e o Total de Descontos, permitindo uma leitura clara da relação de causa e efeito entre receita bruta, política de descontos e resultado final.
 
-Press enter or click to view image in full size
+![img4](resources/img4.png)
 
 Medidas criadas (DAX)
 
@@ -110,7 +111,7 @@ Faturamento Líquido
 DAX
 Faturamento Líquido =
 [Vendas Total] - [Total Desconto]
-Press enter or click to view image in full size
+![img5](resources/img5.png)
 
 A visualização centraliza o Total de Vendas (R$ 1.003.506,97), o Faturamento Líquido (R$ 936.088,33) e o Total de Descontos (R$ 67.418,64), facilitando a compreensão do impacto direto dos descontos sobre a receita final da empresa.
 
@@ -131,7 +132,7 @@ AVERAGEX(
     pedido,
     DATEDIFF(pedido[data_pedido], pedido[data_entrega], DAY)
 )
-Press enter or click to view image in full size
+![img6](resources/img6.png)
 
 A medida foi utilizada na criação de um card de KPI, destacando o Lead Time médio de 27,88 dias como um indicador crítico da operação
 
@@ -146,7 +147,7 @@ Etapas
 Utilizou-se a tabela pedido, com a coluna data_pedido para a hierarquia de tempo (trimestres).
 Como valor, foi aplicada a medida Total de Vendas
 O visual escolhido foi um gráfico de linha com marcadores, facilitando a análise da evolução ao longo do ano.
-Press enter or click to view image in full size
+![img7](resources/img7.png)
 
 O gráfico evidencia o menor faturamento no 2º trimestre (R$ 152K) e a recuperação até o pico no 4º trimestre (R$ 336K), oferecendo suporte ao planejamento financeiro, antecipação de sazonalidades e ajustes estratégicos de vendas e custos operacionais.
 
@@ -159,7 +160,7 @@ Etapas
 Foi utilizado um gráfico de rosca para representar a distribuição do volume de vendas por categoria.
 A análise usou a coluna descricao da tabela categoria e a coluna quantidade da tabela detalhe_pedido.
 Para complementar a visualização, foi criado um card exibindo o total de produtos vendidos (38.682 unidades), obtido pela soma da quantidade.
-Press enter or click to view image in full size
+![img8](resources/img8.png)
 
 O visual destaca a concentração do volume em Laticínios (18,31%) e Bebidas (17%), permitindo identificar categorias com maior giro de estoque e apoiando decisões relacionadas a mix de produtos, reposição e estratégia comercial.
 
@@ -172,7 +173,7 @@ Etapas
 Utilizou-se a coluna descricao da tabela categoria como eixo categórico.
 A medida Total de Vendas foi aplicada para representar o valor absoluto do faturamento (barras).
 A mesma medida foi utilizada para exibir a participação percentual no faturamento total (linha).
-Press enter or click to view image in full size
+![img9](resources/img9.png)
 
 Essa visualização permite comparar volume financeiro e participação relativa entre categorias, apoiando decisões estratégicas sobre precificação, foco comercial e priorização do portfólio de produtos.
 
@@ -185,7 +186,7 @@ Etapas
 Foi utilizado um mapa de calor (Bubble Map) para representar a distribuição geográfica das vendas.
 A análise considerou a coluna pais da tabela endereco.
 A medida Total de Vendas foi aplicada para definir o volume financeiro, representado pelo tamanho das bolhas.
-Press enter or click to view image in full size
+![img10](resources/img10.png)
 
 O visual destaca a maior concentração de vendas na América do Norte e América do Sul, facilitando a identificação de mercados consolidados e oportunidades de expansão geográfica, apoiando decisões estratégicas de crescimento.
 
@@ -198,7 +199,7 @@ Padronização de cores, fontes e estilos, alinhados ao tema do dashboard;
 Organização do layout para facilitar a leitura e comparação entre indicadores;
 Destaque visual para KPIs críticos, direcionando a atenção para os dados mais relevantes;
 Ajustes em rótulos, títulos e legendas para maior objetividade.
-Press enter or click to view image in full size
+![img11](resources/img11.png)
 
 Conclusão
 O dashboard desenvolvido cumpre o objetivo de responder às principais perguntas de negócio da gestão, transformando dados operacionais em informações visuais claras e acionáveis.
