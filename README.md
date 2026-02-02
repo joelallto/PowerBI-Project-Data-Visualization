@@ -63,7 +63,7 @@ A criação do dashboard será orientada por perguntas de negócio previamente d
 Conexão com o banco de dados
 1.1 Nesta etapa, é realizada a conexão com o banco de dados DB_ERP_COMERCIAL, hospedado em um servidor local SQL Server, com o objetivo de acessar as tabelas e informações necessárias para a construção do dashboard.
 
-(./resources/img1.png)
+./resources/img1.png
 
 1.2 Nesta etapa, serão selecionadas todas as tabelas do banco de dados, mesmo que apenas algumas sejam utilizadas inicialmente. Essa decisão visa facilitar futuras expansões do dashboard, garantindo que os dados já estejam disponíveis caso sejam necessários posteriormente.
 
